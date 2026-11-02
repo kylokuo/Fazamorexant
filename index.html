@@ -1392,8 +1392,319 @@
                 background: #fff0f1
             }
 
+            .kol-hero {
+                background: linear-gradient(135deg,#f1f7ff 0%,#eefaf7 100%);
+                border: 1px solid #d4e5ef;
+                border-radius: var(--radius);
+                padding: 22px;
+                margin: 26px 0
+            }
+
+            .kol-hero h2 {
+                font-size: 25px;
+                margin: 0 0 7px
+            }
+
+            .kol-hero p {
+                max-width: 980px;
+                margin: 5px 0;
+                color: #4c5e78
+            }
+
+            .kol-pills {
+                display: flex;
+                gap: 7px;
+                flex-wrap: wrap;
+                margin-top: 14px
+            }
+
+            .kol-pill {
+                border-radius: 999px;
+                background: #fff;
+                border: 1px solid #c9ddea;
+                color: #315979;
+                padding: 6px 10px;
+                font-size: 12px
+            }
+
+            .kol-toolbar {
+                margin-top: 24px
+            }
+
+            .kol-filters {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                align-items: center
+            }
+
+            .kol-filters .select {
+                min-width: 155px
+            }
+
+            .kol-filter-buttons {
+                display: flex;
+                gap: 7px;
+                flex-wrap: wrap;
+                width: 100%;
+                padding-top: 10px
+            }
+
+            .kol-filter-btn {
+                border: 1px solid var(--line);
+                background: #fff;
+                color: var(--muted);
+                border-radius: 999px;
+                padding: 7px 11px;
+                cursor: pointer;
+                font: inherit;
+                font-size: 12px
+            }
+
+            .kol-filter-btn.active,.kol-filter-btn:hover {
+                background: var(--navy);
+                color: #fff;
+                border-color: var(--navy)
+            }
+
+            .kol-layout {
+                display: grid;
+                grid-template-columns: minmax(0,1fr) 310px;
+                gap: 22px;
+                align-items: start
+            }
+
+            .kol-grid {
+                display: grid;
+                grid-template-columns: repeat(2,minmax(0,1fr));
+                gap: 16px
+            }
+
+            .kol-card {
+                background: #fff;
+                border: 1px solid var(--line);
+                border-radius: var(--radius);
+                padding: 19px;
+                box-shadow: var(--shadow);
+                border-top: 4px solid var(--accent,#2c74d6);
+                display: flex;
+                flex-direction: column;
+                min-height: 100%
+            }
+
+            .kol-card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 14px 32px rgba(29,62,105,.12)
+            }
+
+            .kol-card-top {
+                display: flex;
+                justify-content: space-between;
+                gap: 12px;
+                align-items: flex-start
+            }
+
+            .kol-card h2 {
+                font-size: 19px;
+                line-height: 1.3;
+                margin: 6px 0 3px
+            }
+
+            .kol-english {
+                font-size: 12px;
+                color: var(--muted)
+            }
+
+            .kol-org {
+                font-size: 12px;
+                color: #526681;
+                margin-top: 5px
+            }
+
+            .kol-type {
+                font-size: 11px;
+                color: var(--muted);
+                border: 1px solid var(--line);
+                border-radius: 999px;
+                padding: 4px 7px;
+                white-space: nowrap
+            }
+
+            .kol-tags {
+                display: flex;
+                gap: 6px;
+                flex-wrap: wrap;
+                margin: 13px 0 4px
+            }
+
+            .kol-tag {
+                border-radius: 999px;
+                padding: 4px 8px;
+                background: #f0f4fa;
+                color: #4b5d77;
+                font-size: 11px
+            }
+
+            .kol-tag.tier-one {
+                background: #e9f7ef;
+                color: #188052
+            }
+
+            .kol-tag.tier-two {
+                background: #fff5e3;
+                color: #9c6413
+            }
+
+            .kol-tag.tier-three {
+                background: #eef1f7;
+                color: #53647c
+            }
+
+            .kol-card .field {
+                margin-top: 11px
+            }
+
+            .kol-card .field p {
+                margin: 4px 0 0;
+                font-size: 13px
+            }
+
+            .kol-card .field ul {
+                margin: 5px 0 0;
+                padding-left: 18px;
+                color: #526681;
+                font-size: 12px
+            }
+
+            .kol-card .field li {
+                margin: 3px 0
+            }
+
+            .kol-profile {
+                margin-top: 13px;
+                padding: 12px;
+                background: #f7faff;
+                border: 1px solid #dbe8f7;
+                border-radius: 12px
+            }
+
+            .kol-profile p {
+                margin: 4px 0;
+                font-size: 12px;
+                color: #526681
+            }
+
+            .kol-study {
+                margin-top: 11px;
+                padding: 11px 12px;
+                background: #f1fbfa;
+                border: 1px solid #c8e6df;
+                border-radius: 12px
+            }
+
+            .kol-study p {
+                margin: 4px 0 0;
+                font-size: 12px;
+                color: #526681
+            }
+
+            .kol-actions {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+                margin-top: auto;
+                padding-top: 15px
+            }
+
+            .kol-links {
+                display: flex;
+                gap: 6px;
+                flex-wrap: wrap
+            }
+
+            .kol-source {
+                font-size: 11px;
+                font-weight: 800;
+                border-radius: 999px;
+                background: #e6f0ff;
+                color: #245ea9;
+                padding: 3px 7px
+            }
+
+            .kol-empty {
+                grid-column: 1/-1;
+                text-align: center;
+                background: #fff;
+                border: 1px dashed var(--line);
+                border-radius: 16px;
+                padding: 45px;
+                color: var(--muted)
+            }
+
+            .kol-framework {
+                margin: 28px 0;
+                background: #fff;
+                border: 1px solid var(--line);
+                border-radius: var(--radius);
+                padding: 20px;
+                box-shadow: var(--shadow)
+            }
+
+            .kol-framework h2 {
+                font-size: 21px;
+                margin: 0 0 7px
+            }
+
+            .kol-framework p {
+                color: var(--muted);
+                font-size: 13px;
+                margin: 5px 0 12px
+            }
+
+            .kol-tier-table {
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 12px
+            }
+
+            .kol-tier-table th,.kol-tier-table td {
+                border: 1px solid var(--line);
+                padding: 9px;
+                text-align: left;
+                vertical-align: top
+            }
+
+            .kol-tier-table th {
+                background: #f4f7fb;
+                color: var(--navy)
+            }
+
+            .kol-tier-table td strong {
+                display: block;
+                margin-bottom: 3px
+            }
+
+            .kol-tier-one {
+                background: #e9f7ef
+            }
+
+            .kol-tier-two {
+                background: #fff7e9
+            }
+
+            .kol-tier-three {
+                background: #eef1f7
+            }
+
+            .kol-disclaimer {
+                margin-top: 12px;
+                font-size: 11px;
+                color: var(--muted)
+            }
+
             @media(max-width: 1050px) {
-                .layout,.guide-layout,.asset-layout {
+                .layout,.guide-layout,.asset-layout,.kol-layout {
                     grid-template-columns:1fr
                 }
 
@@ -1401,7 +1712,7 @@
                     position: static
                 }
 
-                .grid,.guide-grid,.asset-grid {
+                .grid,.guide-grid,.asset-grid,.kol-grid {
                     grid-template-columns: repeat(2,minmax(0,1fr))
                 }
 
@@ -1415,7 +1726,7 @@
                     padding:0 16px
                 }
 
-                .stats,.insights,.grid,.guide-grid,.gap-grid,.asset-grid,.roadmap-grid {
+                .stats,.insights,.grid,.guide-grid,.gap-grid,.asset-grid,.roadmap-grid,.kol-grid {
                     grid-template-columns: 1fr
                 }
 
@@ -1423,7 +1734,7 @@
                     padding-top: 38px
                 }
 
-                .toolbar,.guide-toolbar,.asset-filter {
+                .toolbar,.guide-toolbar,.asset-filter,.kol-toolbar {
                     position: static
                 }
 
@@ -1448,7 +1759,7 @@
                     overflow: auto
                 }
 
-                .matrix-table,.priority-table {
+                .matrix-table,.priority-table,.kol-tier-table {
                     min-width: 680px
                 }
 
@@ -1468,6 +1779,15 @@
                 .ranking-item p,.ranking-item>.note {
                     grid-column: 2
                 }
+
+                .kol-card-top {
+                    display: block
+                }
+
+                .kol-type {
+                    display: inline-block;
+                    margin-top: 8px
+                }
             }
         </style>
     </head>
@@ -1478,6 +1798,7 @@
                     <button class="nav-btn active" data-page="competitors">治疗竞品</button>
                     <button class="nav-btn" data-page="guidelines">指南与共识</button>
                     <button class="nav-btn" data-page="evidencePlan">法赞雷生循证规划</button>
+                    <button class="nav-btn" data-page="kols">领域相关 KOL</button>
                 </div>
             </div>
             <div class="wrap hero">
@@ -2051,6 +2372,174 @@
                 <h2>法赞雷生证据资产来源</h2>
                 <p class="source-intro">P1–P6 为产品级公开来源或注册研究；P7 为持续追踪入口。公开注册 / 公司公告不等于同行评议全文，页面已在资产卡片中区分“已建立”“部分证据”和“关键缺口”。</p>
                 <div id="productSourceList" class="source-grid"></div>
+            </section>
+        </main>
+        <main id="kolPage" class="wrap page-view" hidden>
+            <section class="stats">
+                <div class="stat">
+                    <strong>21</strong>
+                    <span>初始 KOL / 团队画像</span>
+                </div>
+                <div class="stat">
+                    <strong>6</strong>
+                    <span>重点证据领域</span>
+                </div>
+                <div class="stat">
+                    <strong>3</strong>
+                    <span>分层优先级</span>
+                </div>
+                <div class="stat">
+                    <strong>CN / INT</strong>
+                    <span>中国与国际学术生态</span>
+                </div>
+            </section>
+            <section class="kol-hero">
+                <h2>失眠领域相关 KOL 数据库与画像</h2>
+                <p>本页按“与法赞雷生循证决策的相关性”而非单纯论文数量进行分层，覆盖指南与精神共病、老年与呼吸共病、CBT-I、临床药理与长期安全、orexin 机制以及中医药 / 实施生态，并单独纳入法赞雷生相关论文通讯作者 / PI 线索。个人画像仅使用公开学术资料；团队型条目标记为候选节点，合作前需重新核对当前任职、研究方向与利益冲突。</p>
+                <div class="kol-pills">
+                    <span class="kol-pill">T1：核心决策 / 指南层</span>
+                    <span class="kol-pill">T2：关键证据与临床转化层</span>
+                    <span class="kol-pill">T3：机制 / 实施拓展层</span>
+                    <span class="kol-pill">不包含私人联系方式</span>
+                </div>
+            </section>
+            <section class="insights">
+                <div class="insight">
+                    <b>优先建立“证据共同体”</b>
+                    先围绕长期安全、老年、肝肾功能、焦虑 / 抑郁共病和多药联用建立方法学与临床评价关系，再进入产品沟通。
+                </div>
+                <div class="insight">
+                    <b>不同 KOL 解决不同问题</b>
+                    指南型 KOL 影响推荐语言，临床型 KOL 影响患者分层，方法学 KOL 影响终点与研究设计，机制型 KOL 影响科学叙事。
+                </div>
+                <div class="insight">
+                    <b>画像不是“影响力排名”</b>
+                    本页的 T1–T3 是围绕法赞雷生证据规划的接触优先级，不代表学术地位、商业价值或对产品的支持态度。
+                </div>
+            </section>
+            <section class="toolbar kol-toolbar" aria-label="KOL 数据库筛选器">
+                <div class="kol-filters">
+                    <div class="search">
+                        <input id="kolSearch" type="search" placeholder="搜索姓名、机构、领域、研究问题…"/>
+                    </div>
+                    <select id="kolRegionFilter" class="select" aria-label="KOL地区">
+                        <option value="all">全部地区</option>
+                        <option value="CN">中国大陆</option>
+                        <option value="INT">国际</option>
+                        <option value="TEAM">团队 / 机构</option>
+                    </select>
+                    <select id="kolTierFilter" class="select" aria-label="KOL分层">
+                        <option value="all">全部分层</option>
+                        <option value="T1">T1 · 核心决策 / 指南层</option>
+                        <option value="T2">T2 · 关键证据 / 临床转化层</option>
+                        <option value="T3">T3 · 机制 / 实施拓展层</option>
+                    </select>
+                    <select id="kolDomainFilter" class="select" aria-label="KOL领域">
+                        <option value="all">全部领域</option>
+                        <option value="guideline">指南与精神共病</option>
+                        <option value="geriatric">老年与呼吸共病</option>
+                        <option value="cbti">CBT-I 与行为治疗</option>
+                        <option value="clinical">临床药理与长期安全</option>
+                        <option value="orexin">Orexin / 睡眠觉醒机制</option>
+                        <option value="tcm">中医药与实施生态</option>
+                        <option value="productPI">法赞雷生项目证据与临床开发</option>
+                    </select>
+                    <select id="kolEntityFilter" class="select" aria-label="对象类型">
+                        <option value="all">全部对象</option>
+                        <option value="person">外部个人 KOL</option>
+                        <option value="team">外部团队 / 机构</option>
+                        <option value="productPI">法赞雷生相关通讯作者 / PI 线索</option>
+                    </select>
+                    <span id="kolResultCount" class="result-count"></span>
+                </div>
+                <div id="kolDomainButtons" class="kol-filter-buttons"></div>
+            </section>
+            <div class="kol-layout">
+                <section>
+                    <div id="kolCards" class="kol-grid"></div>
+                </section>
+                <aside class="sidebar">
+                    <div class="side-box">
+                        <h3>分层逻辑</h3>
+                        <p>
+                            <b>T1</b>
+                            ：可能参与指南、共识、临床路径或关键决策语言。
+                        </p>
+                        <p>
+                            <b>T2</b>
+                            ：在具体证据方向上有较强研究 / 临床转化相关性。
+                        </p>
+                        <p>
+                            <b>T3</b>
+                            ：为 orexin 机制、数字 CBT-I、实施或生态拓展提供补充价值。
+                        </p>
+                    </div>
+                    <div class="side-box">
+                        <h3>优先沟通主题</h3>
+                        <ol class="method-list">
+                            <li>长期安全：跌倒、认知、次日功能、停药与反跳。</li>
+                            <li>特殊人群：老年、肝肾功能、OSA、多病共存。</li>
+                            <li>共病价值：焦虑 / 抑郁、抗抑郁药联用和 CBT-I 互补。</li>
+                        </ol>
+                    </div>
+                    <div class="side-box">
+                        <h3>使用边界</h3>
+                        <p>公开作者数据库可支持学术相关性初筛，不能替代当前任职、近期课题、利益冲突和真实合作意愿核验。</p>
+                        <p>“高相关”不等于“会支持产品”；首轮接触应优先讨论未决临床问题和研究设计。</p>
+                        <p>产品相关研究者卡片中的“通讯作者”来自公开论文；通讯作者不必然等同于临床试验 PI，正式合作前需按注册信息 / CSR 复核。</p>
+                    </div>
+                </aside>
+            </div>
+            <section class="kol-framework">
+                <h2>画像字段与使用方式</h2>
+                <p>每张卡片同时呈现“学术领域—产品相关问题—建议切入点—公开证据入口”，用于医学策略、研究者发起研究和指南 / 共识沟通的前期分层。</p>
+                <table class="kol-tier-table">
+                    <thead>
+                        <tr>
+                            <th>字段</th>
+                            <th>页面含义</th>
+                            <th>不应被误读为</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>领域</strong>
+                            </td>
+                            <td>该 KOL 与法赞雷生证据缺口最相关的研究问题。</td>
+                            <td>其全部研究方向或唯一专长。</td>
+                        </tr>
+                        <tr>
+                            <td class="kol-tier-one">
+                                <strong>T1 / T2 / T3</strong>
+                            </td>
+                            <td>围绕本产品循证规划的接触优先级。</td>
+                            <td>学术地位、商业价值或对产品的支持度排名。</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>公开学术信号</strong>
+                            </td>
+                            <td>OpenAlex 作者页、PubMed 检索或公开指南 / 共识入口。</td>
+                            <td>当前合作关系、私人联系方式或未公开的利益冲突判断。</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>建议切入点</strong>
+                            </td>
+                            <td>第一次学术沟通可讨论的临床问题或方法学问题。</td>
+                            <td>已经获得对方同意的合作方案。</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>产品研究关联</strong>
+                            </td>
+                            <td>公开论文通讯作者、论文贡献角色、Sponsor / study team 或 PI 线索。</td>
+                            <td>已核实的临床试验 PI、当前合作关系或对产品的支持态度。</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="kol-disclaimer">数据口径：公开资料初筛，截至 2026-11-02；OpenAlex 作者页的机构和主题标签可能存在历史任职合并，正式建联前需由医学事务团队复核。产品相关研究者已按论文 / 注册记录单独标注；未将通讯作者自动等同于 PI。</div>
             </section>
         </main>
         <footer>
@@ -2911,6 +3400,472 @@
                 key: '适合补充新药临床定位、患者选择和实践落地问题。',
                 gap: '国家标签、支付条件和专家意见的外推边界需单独说明。'
             }];
+            const kolProfiles = [{
+                id: 'K01',
+                name: '陆林',
+                english: 'Lin Lü',
+                entity: '个人',
+                region: 'CN',
+                regionLabel: '中国大陆',
+                tier: 'T1',
+                tierLabel: 'T1 · 核心决策 / 指南层',
+                domain: 'guideline',
+                domainLabel: '指南与精神共病',
+                accent: '#2c74d6',
+                org: '北京大学第六医院；北京大学',
+                role: '精神医学、睡眠—情绪共病与精神健康',
+                profile: '公开作者画像显示其研究覆盖睡眠相关障碍、神经机制、行为与成瘾 / 精神健康方向，适合进入失眠与精神共病的高层证据讨论。',
+                signals: ['Sleep and related disorders', 'Neurotransmitter / behavior', 'Substance use and mental health'],
+                fit: '焦虑 / 抑郁共病、自杀风险监测、长期安全与精神科临床路径。',
+                engagement: '优先讨论共病研究设计、风险管理和指南语言；以临床问题为入口，不以产品宣讲为首要入口。',
+                verification: '公开学术画像可核验',
+                sourceUrl: 'https://openalex.org/A5072086960',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Lin+Lu+insomnia'
+            }, {
+                id: 'K02',
+                name: '韩芳',
+                english: 'Fang Han',
+                entity: '个人',
+                region: 'CN',
+                regionLabel: '中国大陆',
+                tier: 'T1',
+                tierLabel: 'T1 · 核心决策 / 指南层',
+                domain: 'geriatric',
+                domainLabel: '老年与呼吸共病',
+                accent: '#0b9a91',
+                org: '北京大学人民医院；北京大学',
+                role: '睡眠医学、OSA 与睡眠—呼吸共病',
+                profile: '公开作者画像以睡眠与觉醒、OSA 和睡眠医学为主要学术信号，适合连接失眠、睡眠呼吸障碍和老年患者的临床评价。',
+                signals: ['Obstructive sleep apnea', 'Sleep and related disorders', 'Sleep and wakefulness'],
+                fit: '老年患者、OSA 筛查、呼吸安全、多病共存和睡眠中心路径。',
+                engagement: '围绕老年失眠患者研究、OSA 排除 / 纳入标准、呼吸安全终点和真实世界队列沟通。',
+                verification: '公开学术画像可核验',
+                sourceUrl: 'https://openalex.org/A5100405736',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Fang+Han+sleep+medicine'
+            }, {
+                id: 'K03',
+                name: '唐向东',
+                english: 'Xiangdong Tang',
+                entity: '个人',
+                region: 'CN',
+                regionLabel: '中国大陆',
+                tier: 'T2',
+                tierLabel: 'T2 · 关键证据 / 临床转化层',
+                domain: 'clinical',
+                domainLabel: '临床药理与长期安全',
+                accent: '#0b9a91',
+                org: '四川大学华西医院；华西医学中心',
+                role: '临床睡眠医学、睡眠—觉醒与呼吸睡眠障碍',
+                profile: '公开作者画像显示其长期聚焦睡眠相关障碍、OSA、睡眠—觉醒研究，适合把药物证据转化为睡眠中心可执行的临床终点。',
+                signals: ['Sleep and related disorders', 'Obstructive sleep apnea', 'Sleep and wakefulness'],
+                fit: '临床疗效终点、次日功能、睡眠连续性、长期随访和中国临床实践。',
+                engagement: '讨论 ISI / PSG / 睡眠日记 / 次日功能的组合终点，以及长期安全登记的可实施性。',
+                verification: '公开学术画像可核验',
+                sourceUrl: 'https://openalex.org/A5052758198',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Xiangdong+Tang+sleep'
+            }, {
+                id: 'K04',
+                name: '赵忠新',
+                english: 'Zhongxin Zhao',
+                entity: '个人',
+                region: 'CN',
+                regionLabel: '中国大陆',
+                tier: 'T2',
+                tierLabel: 'T2 · 关键证据 / 临床转化层',
+                domain: 'geriatric',
+                domainLabel: '老年与神经认知共病',
+                accent: '#c98418',
+                org: '上海长征医院',
+                role: '睡眠医学、神经科与认知 / 老年共病',
+                profile: '公开作者画像的主题信号集中于睡眠与觉醒、睡眠相关障碍和睡眠—工作疲劳，适合连接神经科、老年患者和认知安全问题。',
+                signals: ['Sleep and wakefulness', 'Sleep and related disorders', 'Sleep and work-related fatigue'],
+                fit: '老年、认知、跌倒、日间功能、神经科共病和多药联用。',
+                engagement: '重点讨论健康老年志愿者结果如何外推到真实失眠患者，以及认知 / 跌倒终点如何标准化。',
+                verification: '公开学术画像可核验',
+                sourceUrl: 'https://openalex.org/A5100936987',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Zhongxin+Zhao+sleep'
+            }, {
+                id: 'K05',
+                name: '王广发',
+                english: 'Guangfa Wang',
+                entity: '个人',
+                region: 'CN',
+                regionLabel: '中国大陆',
+                tier: 'T2',
+                tierLabel: 'T2 · 关键证据 / 临床转化层',
+                domain: 'geriatric',
+                domainLabel: '呼吸共病与安全边界',
+                accent: '#c98418',
+                org: '北京大学第一医院',
+                role: '呼吸医学、OSA 与睡眠相关呼吸疾病',
+                profile: '公开作者画像显示其核心主题包括 OSA、睡眠相关障碍和呼吸系统疾病，适合评估失眠药物在 OSA / 呼吸共病人群中的外推边界。',
+                signals: ['Obstructive sleep apnea', 'Sleep and related disorders', 'Respiratory diseases'],
+                fit: 'OSA 共病、呼吸抑制风险、夜间氧合和睡眠呼吸障碍筛查。',
+                engagement: '围绕 OSA 合并失眠的研究入组、呼吸安全终点和真实世界处方审核建立学术沟通。',
+                verification: '公开学术画像可核验',
+                sourceUrl: 'https://openalex.org/A5013568062',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Guangfa+Wang+sleep+apnea'
+            }, {
+                id: 'K06',
+                name: 'Charles M. Morin',
+                english: 'Charles M. Morin',
+                entity: '个人',
+                region: 'INT',
+                regionLabel: '国际',
+                tier: 'T1',
+                tierLabel: 'T1 · 核心决策 / 指南层',
+                domain: 'cbti',
+                domainLabel: 'CBT-I 与行为治疗',
+                accent: '#2c74d6',
+                org: 'Université Laval；CERVO Research Centre',
+                role: 'CBT-I、慢性失眠和行为睡眠医学',
+                profile: '公开作者画像显示其长期聚焦睡眠相关障碍、行为治疗、焦虑 / 抑郁与睡眠共病，是 CBT-I 长期疗效和临床实施讨论的核心国际节点。',
+                signals: ['Sleep and related disorders', 'Psychological treatments', 'Anxiety / depression and sleep'],
+                fit: '药物与 CBT-I 的互补、长期获益、复发管理和患者报告结局。',
+                engagement: '以“药物如何嵌入 CBT-I 和减停药路径”为切入点，讨论联合方案与长期结局，而非单纯比较短期疗效。',
+                verification: '公开学术画像可核验',
+                sourceUrl: 'https://openalex.org/A5022459245',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Charles+M+Morin+insomnia'
+            }, {
+                id: 'K07',
+                name: 'Michael L. Perlis',
+                english: 'Michael Lloyd Perlis',
+                entity: '个人',
+                region: 'INT',
+                regionLabel: '国际',
+                tier: 'T2',
+                tierLabel: 'T2 · 关键证据 / 临床转化层',
+                domain: 'cbti',
+                domainLabel: 'CBT-I 与结局测量',
+                accent: '#0b9a91',
+                org: 'University of Pennsylvania',
+                role: '行为睡眠医学、CBT-I、失眠表型与结局测量',
+                profile: '公开作者画像显示其研究覆盖睡眠相关障碍、OSA 以及焦虑 / 抑郁心理测量，适合帮助优化失眠研究的患者分层和结局设计。',
+                signals: ['Sleep and related disorders', 'Behavioral sleep medicine', 'Anxiety / depression psychometrics'],
+                fit: 'ISI、睡眠日记、日间功能、共病分层和药物—行为联合研究。',
+                engagement: '重点讨论研究终点、失眠表型、患者报告结局和“睡眠改善是否转化为白天功能改善”。',
+                verification: '公开学术画像可核验',
+                sourceUrl: 'https://openalex.org/A5063565381',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Michael+Perlis+insomnia'
+            }, {
+                id: 'K08',
+                name: 'Daniel J. Buysse',
+                english: 'Daniel J. Buysse',
+                entity: '个人',
+                region: 'INT',
+                regionLabel: '国际',
+                tier: 'T1',
+                tierLabel: 'T1 · 核心决策 / 指南层',
+                domain: 'clinical',
+                domainLabel: '失眠诊断与临床试验',
+                accent: '#2c74d6',
+                org: 'University of Pittsburgh',
+                role: '失眠诊断、临床试验、睡眠测量与临床结局',
+                profile: '公开作者画像以睡眠相关障碍、睡眠—工作疲劳和睡眠—觉醒研究为核心，适合连接诊断框架、试验设计与长期临床获益。',
+                signals: ['Sleep and related disorders', 'Sleep and work-related fatigue', 'Sleep and wakefulness'],
+                fit: '长期安全 / 获益、诊断一致性、临床试验终点和真实世界可解释性。',
+                engagement: '围绕长期净获益、停药后结局、睡眠与日间功能的共同终点进行方法学交流。',
+                verification: '公开学术画像可核验',
+                sourceUrl: 'https://openalex.org/A5039315120',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+J+Buysse+insomnia'
+            }, {
+                id: 'K09',
+                name: 'Dieter Riemann',
+                english: 'Dieter Wilhelm Riemann',
+                entity: '个人',
+                region: 'INT',
+                regionLabel: '国际',
+                tier: 'T1',
+                tierLabel: 'T1 · 核心决策 / 指南层',
+                domain: 'guideline',
+                domainLabel: '欧洲指南与 CBT-I',
+                accent: '#2c74d6',
+                org: 'University of Freiburg；University Medical Center Freiburg',
+                role: '慢性失眠、CBT-I 与欧洲指南',
+                profile: '公开作者画像显示其长期聚焦睡眠相关障碍、睡眠—觉醒和临床失眠，是欧洲指南与失眠治疗路径讨论的重要节点。',
+                signals: ['Sleep and related disorders', 'Sleep and wakefulness', 'European insomnia guideline context'],
+                fit: '指南推荐层级、短期与长期药物定位、CBT-I 一线和减停药。',
+                engagement: '围绕证据质量、推荐语言、长期药物管理和 DORA 进入指南的条件开展学术沟通。',
+                verification: '公开学术画像可核验',
+                sourceUrl: 'https://openalex.org/A5030135921',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Dieter+Riemann+insomnia'
+            }, {
+                id: 'K10',
+                name: 'Colin A. Espie',
+                english: 'Colin Alexander Espie',
+                entity: '个人',
+                region: 'INT',
+                regionLabel: '国际',
+                tier: 'T2',
+                tierLabel: 'T2 · 关键证据 / 临床转化层',
+                domain: 'cbti',
+                domainLabel: '数字 CBT-I 与实施',
+                accent: '#0b9a91',
+                org: 'University of Oxford；Big Health',
+                role: 'CBT-I、数字治疗与睡眠医学实施',
+                profile: '公开作者画像显示其研究聚焦睡眠相关障碍、心理治疗、焦虑 / 抑郁和数字心理健康，适合讨论 CBT-I 可及性与数字化实施。',
+                signals: ['Sleep and related disorders', 'Psychotherapy techniques', 'Digital mental health'],
+                fit: '数字 CBT-I、药物互补、患者可及性、支付与规模化实施。',
+                engagement: '重点讨论药物与数字 CBT-I 的路径组合、依从性、数字终点和真实世界实施评价。',
+                verification: '公开学术画像可核验',
+                sourceUrl: 'https://openalex.org/A5018637481',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Colin+Espie+insomnia'
+            }, {
+                id: 'K11',
+                name: 'Thomas G. Roth',
+                english: 'Thomas G. Roth',
+                entity: '个人',
+                region: 'INT',
+                regionLabel: '国际',
+                tier: 'T2',
+                tierLabel: 'T2 · 关键证据 / 临床转化层',
+                domain: 'clinical',
+                domainLabel: '临床药理与催眠药试验',
+                accent: '#c98418',
+                org: 'Henry Ford Health；Henry Ford Hospital',
+                role: '睡眠医学、催眠药临床试验与药物评价',
+                profile: '公开作者画像以睡眠相关障碍、睡眠—工作疲劳和睡眠—觉醒研究为核心，适合讨论催眠药临床试验、比较研究和安全性终点。',
+                signals: ['Sleep and related disorders', 'Sleep and work-related fatigue', 'Sleep and wakefulness'],
+                fit: 'DORA / BZRA 比较、长期暴露、次日功能、药物警戒和试验可比性。',
+                engagement: '以研究方案、主动对照、长期随访和安全性终点为入口，避免只寻求产品背书。',
+                verification: '公开学术画像可核验',
+                sourceUrl: 'https://openalex.org/A5011832419',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Thomas+G+Roth+insomnia'
+            }, {
+                id: 'K12',
+                name: 'Emmanuel Mignot',
+                english: 'Emmanuel Jean-Marie Mignot',
+                entity: '个人',
+                region: 'INT',
+                regionLabel: '国际',
+                tier: 'T3',
+                tierLabel: 'T3 · 机制 / 实施拓展层',
+                domain: 'orexin',
+                domainLabel: 'Orexin / 睡眠觉醒机制',
+                accent: '#7d54b6',
+                org: 'Stanford Medicine；Stanford University',
+                role: 'Orexin、生理性睡眠—觉醒与嗜睡障碍机制',
+                profile: '公开作者画像显示其核心主题为睡眠—觉醒、睡眠相关障碍和 OSA；其价值主要在 orexin 生物学和机制叙事，而非直接替代失眠临床指南意见。',
+                signals: ['Sleep and wakefulness', 'Sleep and related disorders', 'Orexin biology context'],
+                fit: 'DORA 机制解释、睡眠—觉醒生理、机制型医学教育和科学传播。',
+                engagement: '适合科学顾问式机制交流；不应把机制领域影响力直接转译为法赞雷生临床优效判断。',
+                verification: '公开学术画像可核验',
+                sourceUrl: 'https://openalex.org/A5107994045',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Emmanuel+Mignot+orexin'
+            }, {
+                id: 'K13',
+                name: 'Michael J. Sateia',
+                english: 'Michael J. Sateia',
+                entity: '个人',
+                region: 'INT',
+                regionLabel: '国际',
+                tier: 'T1',
+                tierLabel: 'T1 · 核心决策 / 指南层',
+                domain: 'guideline',
+                domainLabel: '指南方法与药物推荐',
+                accent: '#2c74d6',
+                org: '公开作者资料显示的睡眠医学 / AASM 指南学术角色',
+                role: '睡眠医学、药物治疗指南与推荐体系',
+                profile: '公开作者画像与既有 AASM 药物治疗指南来源相关，适合帮助理解逐药推荐、证据质量和推荐强度之间的边界。',
+                signals: ['Sleep and related disorders', 'Sleep and work-related fatigue', 'Guideline methodology context'],
+                fit: '药物推荐层级、证据质量、患者偏好、短期使用和指南更新。',
+                engagement: '讨论法赞雷生进入指南语境所需的长期、特殊人群和比较性证据，而不是直接寻求推荐。',
+                verification: '公开作者与指南来源可核验；当前任职需复核',
+                sourceUrl: 'https://openalex.org/A5009634757',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Michael+J+Sateia+insomnia'
+            }, {
+                id: 'K14',
+                name: '中国睡眠研究会 / 指南与教育团队',
+                english: 'Chinese Sleep Research Society',
+                entity: '团队型',
+                region: 'TEAM',
+                regionLabel: '团队 / 机构',
+                tier: 'T1',
+                tierLabel: 'T1 · 核心决策 / 指南层',
+                domain: 'guideline',
+                domainLabel: '中国指南与教育生态',
+                accent: '#2c74d6',
+                org: '中国睡眠研究会',
+                role: '中国失眠指南、继续教育与临床路径',
+                profile: '2025 版失眠症诊断和治疗指南及其解读构成公开学术入口，适合建立中国指南、教育和临床实施层面的机构型关系。',
+                signals: ['中国 2025 版失眠指南', '临床推荐与教育', '数字 CBT-I / 特殊人群'],
+                fit: '中国推荐语言、老年 / 女性 / 儿童等特殊人群、数字 CBT-I 和临床教育。',
+                engagement: '优先围绕证据缺口、真实世界研究和临床路径共建沟通；团队负责人和具体分工需在建联前更新。',
+                verification: '团队型候选节点 · 需核验当前负责人',
+                sourceUrl: 'https://pubmed.ncbi.nlm.nih.gov/40904305/',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/40904305/'
+            }, {
+                id: 'K15',
+                name: '中国中医科学院广安门医院睡眠医学团队',
+                english: 'Guang’anmen Hospital sleep medicine team',
+                entity: '团队型',
+                region: 'TEAM',
+                regionLabel: '团队 / 机构',
+                tier: 'T2',
+                tierLabel: 'T2 · 关键证据 / 临床转化层',
+                domain: 'tcm',
+                domainLabel: '中医药与实施生态',
+                accent: '#aa6e25',
+                org: '中国中医科学院广安门医院',
+                role: '中医药失眠诊疗、中西医结合与方剂证据',
+                profile: '作为中成药 / 中医药竞品生态的机构型候选节点，适合补充方剂、辨证、中西医结合和患者接受度相关的临床视角。',
+                signals: ['中医药失眠诊疗', '方剂与复方证据', '中西医结合实施'],
+                fit: '中成药比较、长期使用叙事、产品级 RCT、质量一致性和联合治疗。',
+                engagement: '先讨论证据标准化、对照设计和真实世界路径；具体科室负责人、近期课题和利益冲突需另行核验。',
+                verification: '团队型候选节点 · 需核验当前负责人',
+                sourceUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Guang%27anmen+Hospital+insomnia',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Guang%27anmen+Hospital+insomnia'
+            }, {
+                id: 'K16',
+                name: 'Ruwei Wang',
+                english: 'Ruwei Wang',
+                entity: '产品相关研究者',
+                entityType: 'productPI',
+                region: 'CN',
+                regionLabel: '中国大陆',
+                tier: 'T1',
+                tierLabel: 'T1 · 产品证据 / 重点研究者',
+                domain: 'productPI',
+                domainLabel: '法赞雷生项目证据与临床开发',
+                accent: '#0b9a91',
+                org: '扬子江药业集团；National Key Laboratory of Advanced Drug Formulations for Overcoming Delivery Barriers',
+                role: 'P4–P6 论文通讯作者；P6 论文明确为 overall supervision',
+                profile: '公开论文显示其参与法赞雷生肝功能不全、健康老年认知 / 平衡和 ticagrelor 相互作用研究，并担任相关论文通讯作者。',
+                signals: ['P4 肝功能不全：通讯作者', 'P5 健康老年认知 / 平衡：通讯作者', 'P6 DDI：通讯作者与总体监督'],
+                fit: '肝功能、老年次日功能、药物相互作用、长期安全和产品证据链整合。',
+                engagement: '以未决安全问题、研究设计和长期证据规划为切入点；可优先讨论 P4–P6 如何衔接到患者级研究。',
+                verification: '公开通讯作者；P6总体监督；PI身份需复核',
+                study: 'P4 肝功能不全 · P5 健康老年认知 / 平衡 · P6 ticagrelor DDI',
+                studyRole: '论文通讯作者；P6 研究总体监督者 / PI 线索',
+                studySource: 'P4 · P5 · P6',
+                sourceUrl: 'https://doi.org/10.1186/s40360-026-01186-0',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=Ruwei+Wang+fazamorexant'
+            }, {
+                id: 'K17',
+                name: 'Xingxing Huang',
+                english: 'Xingxing Huang',
+                entity: '产品相关研究者',
+                entityType: 'productPI',
+                region: 'CN',
+                regionLabel: '中国大陆',
+                tier: 'T1',
+                tierLabel: 'T1 · 产品证据 / 重点研究者',
+                domain: 'productPI',
+                domainLabel: '法赞雷生项目证据与临床开发',
+                accent: '#0b9a91',
+                org: '扬子江药业集团',
+                role: 'P2 FIH PK / PD / 安全研究通讯作者；参与 P6 研究设计',
+                profile: '公开论文显示其是法赞雷生 FIH 研究的通讯作者，并在 ticagrelor DDI 研究中承担 study conception and design 角色。',
+                signals: ['P2 FIH：通讯作者', 'P6 DDI：研究设计', '产品 PK / PD 与安全性'],
+                fit: '早期 PK / PD、次日功能、特殊人群安全和 DDI 证据的临床转化。',
+                engagement: '围绕早期机制和 PK 资产如何转化为长期安全、特殊人群与真实世界研究开展方法学沟通。',
+                verification: '公开通讯作者；P6研究设计角色；PI身份需复核',
+                study: 'P2 FIH PK / PD / 安全 · P6 ticagrelor DDI',
+                studyRole: 'P2 论文通讯作者；P6 研究设计角色',
+                studySource: 'P2 · P6',
+                sourceUrl: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12184692/',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/40552089/'
+            }, {
+                id: 'K18',
+                name: 'Xiaohua Hao',
+                english: 'Xiaohua Hao',
+                entity: '产品相关研究者',
+                entityType: 'productPI',
+                region: 'CN',
+                regionLabel: '中国大陆',
+                tier: 'T1',
+                tierLabel: 'T1 · 产品证据 / 重点研究者',
+                domain: 'productPI',
+                domainLabel: '法赞雷生项目证据与临床开发',
+                accent: '#2c74d6',
+                org: '北京世纪坛医院；首都医科大学',
+                role: 'P2 FIH PK / PD / 安全研究通讯作者',
+                profile: '公开论文将其列为 FIH 研究通讯作者，所属临床机构为北京世纪坛医院；首都医科大学。',
+                signals: ['P2 FIH：通讯作者', '健康成人 PK / PD', '短期安全与耐受性'],
+                fit: 'FIH 研究外推边界、临床药理、次日功能和长期安全研究设计。',
+                engagement: '重点讨论健康志愿者 PK / PD 如何与失眠患者、老年和共病人群的临床终点衔接。',
+                verification: '公开通讯作者；PI身份需复核',
+                study: 'P2 FIH PK / PD / 安全研究',
+                studyRole: '论文通讯作者 / 项目 PI 线索',
+                studySource: 'P2',
+                sourceUrl: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12184692/',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/40552089/'
+            }, {
+                id: 'K19',
+                name: 'Jiajia Mai',
+                english: 'Jiajia Mai',
+                entity: '产品相关研究者',
+                entityType: 'productPI',
+                region: 'CN',
+                regionLabel: '中国大陆',
+                tier: 'T2',
+                tierLabel: 'T2 · 产品证据 / 临床执行层',
+                domain: 'productPI',
+                domainLabel: '法赞雷生项目证据与临床开发',
+                accent: '#c98418',
+                org: '吉林大学第一医院；Phase I Clinical Research Center',
+                role: 'P4 肝功能不全研究通讯作者；Project administration',
+                profile: '公开论文将其列为肝功能不全研究通讯作者，并在作者贡献中标注项目管理角色。论文未直接将其称为 PI。',
+                signals: ['P4：通讯作者', 'Project administration', 'Child-Pugh A / B PK 与耐受性'],
+                fit: '特殊人群 PK 研究执行、肝病患者入组和后续真实世界安全研究。',
+                engagement: '可围绕肝功能不全研究的长期多次给药、复杂联用和 Child-Pugh C 缺口讨论后续证据。',
+                verification: '公开通讯作者；项目管理角色；PI身份需复核',
+                study: 'P4 肝功能不全 Phase I / PBPK',
+                studyRole: '论文通讯作者；Project administration',
+                studySource: 'P4',
+                sourceUrl: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC13153453/',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/42110531/'
+            }, {
+                id: 'K20',
+                name: 'Hong Zhang',
+                english: 'Hong Zhang',
+                entity: '产品相关研究者',
+                entityType: 'productPI',
+                region: 'CN',
+                regionLabel: '中国大陆',
+                tier: 'T2',
+                tierLabel: 'T2 · 产品证据 / 临床执行层',
+                domain: 'productPI',
+                domainLabel: '法赞雷生项目证据与临床开发',
+                accent: '#c98418',
+                org: '吉林大学第一医院；Phase I Clinical Research Center',
+                role: 'P4 肝功能不全研究通讯作者；Project administration / Formal analysis',
+                profile: '公开论文将其列为肝功能不全研究通讯作者，并在作者贡献中标注项目管理、形式分析、软件和论文撰写等角色。',
+                signals: ['P4：通讯作者', 'Project administration', 'Formal analysis / Software'],
+                fit: '肝功能不全研究方法学、PBPK 外推和监管沟通所需的证据边界。',
+                engagement: '优先讨论 PK、PBPK 与标签剂量建议的衔接，以及患者级长期安全数据的补充。',
+                verification: '公开通讯作者；项目管理与分析角色；PI身份需复核',
+                study: 'P4 肝功能不全 Phase I / PBPK',
+                studyRole: '论文通讯作者；Project administration / Formal analysis',
+                studySource: 'P4',
+                sourceUrl: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC13153453/',
+                pubmedUrl: 'https://pubmed.ncbi.nlm.nih.gov/42110531/'
+            }, {
+                id: 'K21',
+                name: 'Shanghai Haiyan Pharmaceutical Technology Co., Ltd.',
+                english: 'Shanghai Haiyan Pharmaceutical Technology Co., Ltd.',
+                entity: '研究 Sponsor / study team',
+                entityType: 'productPI',
+                region: 'TEAM',
+                regionLabel: '团队 / 机构',
+                tier: 'T2',
+                tierLabel: 'T2 · 产品证据 / 临床开发层',
+                domain: 'productPI',
+                domainLabel: '法赞雷生项目证据与临床开发',
+                accent: '#7d54b6',
+                org: '上海海烟药物科技有限公司',
+                role: 'P3 NCT06680505 Sponsor / Responsible Party',
+                profile: 'ClinicalTrials.gov 公开记录将其列为 P3 的 Sponsor 与 Responsible Party；记录未公开个人 Principal Investigator、Site PI 或个人研究联系人。',
+                signals: ['P3 Phase II 原发性慢性失眠', 'Sponsor / Responsible Party', '个人 PI 未公开'],
+                fit: '关键疗效研究结果、注册数据、长期安全和研究团队承接。',
+                engagement: '先核对最新注册状态、结果披露和正式研究联系人；不以公开 Sponsor 条目替代个人 PI 建联。',
+                verification: '公开 Sponsor / Responsible Party；个人 PI 未公开',
+                study: 'P3 NCT06680505 · YZJ-1139 Phase II',
+                studyRole: 'Sponsor / Responsible Party；个人 PI 未公开',
+                studySource: 'P3',
+                sourceUrl: 'https://clinicaltrials.gov/study/NCT06680505',
+                pubmedUrl: 'https://clinicaltrials.gov/api/v2/studies/NCT06680505'
+            }];
             let activeGuideSystem = 'all'
               , selectedGuides = new Set();
             const guideSystems = [{
@@ -3169,6 +4124,63 @@
                 "'": '&#39;'
             }[m]));
             const sourceAnchor = id => id.startsWith('P') ? `<a class="evidence-id" href="#${id}" data-product-source="${id}">${id}</a>` : `<a class="evidence-id" href="#${id}">${id}</a>`;
+            let activeKolDomain = 'all';
+            const kolDomains = [{
+                id: 'all',
+                label: '全部领域'
+            }, {
+                id: 'guideline',
+                label: '指南与精神共病'
+            }, {
+                id: 'geriatric',
+                label: '老年与呼吸共病'
+            }, {
+                id: 'cbti',
+                label: 'CBT-I 与行为治疗'
+            }, {
+                id: 'clinical',
+                label: '临床药理与长期安全'
+            }, {
+                id: 'orexin',
+                label: 'Orexin / 睡眠觉醒机制'
+            }, {
+                id: 'tcm',
+                label: '中医药与实施生态'
+            }, {
+                id: 'productPI',
+                label: '法赞雷生项目证据与临床开发'
+            }];
+            function kolTierClass(tier) {
+                return tier === 'T1' ? 'tier-one' : tier === 'T2' ? 'tier-two' : 'tier-three'
+            }
+            function kolMatches(k) {
+                const q = document.getElementById('kolSearch').value.trim().toLowerCase();
+                const region = document.getElementById('kolRegionFilter').value;
+                const tier = document.getElementById('kolTierFilter').value;
+                const domain = document.getElementById('kolDomainFilter').value;
+                const entityFilter = document.getElementById('kolEntityFilter').value;
+                const entityType = k.entityType || (k.region === 'TEAM' ? 'team' : 'person');
+                const hay = [k.name, k.english, k.entity, k.regionLabel, k.tierLabel, k.domainLabel, k.org, k.role, k.profile, (k.signals || []).join(' '), k.fit, k.engagement, k.verification, k.study, k.studyRole, k.studySource].filter(Boolean).join(' ').toLowerCase();
+                return (!q || hay.includes(q)) && (region === 'all' || k.region === region) && (tier === 'all' || k.tier === tier) && (domain === 'all' || k.domain === domain) && (entityFilter === 'all' || entityType === entityFilter) && (activeKolDomain === 'all' || k.domain === activeKolDomain)
+            }
+            function kolCardHTML(k) {
+                const study = k.study ? '<div class="kol-study"><div class="label">法赞雷生研究关联</div><p>' + esc(k.study) + '</p><p>' + esc(k.studyRole || '') + (k.studySource ? ' · 证据：' + esc(k.studySource) : '') + '</p></div>' : '';
+                return '<article class="kol-card" style="--accent:' + k.accent + '"><div class="kol-card-top"><div><div class="kicker">' + esc(k.domainLabel) + '</div><h2>' + esc(k.name) + '</h2><div class="kol-english">' + esc(k.english) + '</div><div class="kol-org">' + esc(k.org) + '</div></div><span class="kol-type">' + esc(k.entity) + '</span></div><div class="kol-tags"><span class="kol-tag ' + kolTierClass(k.tier) + '">' + esc(k.tierLabel) + '</span><span class="kol-tag">' + esc(k.regionLabel) + '</span><span class="kol-tag">' + esc(k.verification) + '</span></div><div class="field"><div class="label">专业角色</div><p>' + esc(k.role) + '</p></div><div class="field"><div class="label">公开学术画像</div><p>' + esc(k.profile) + '</p></div><div class="field"><div class="label">公开学术信号</div><ul>' + k.signals.map(s => '<li>' + esc(s) + '</li>').join('') + '</ul></div>' + study + '<div class="kol-profile"><div class="label">与法赞雷生循证规划的相关问题</div><p>' + esc(k.fit) + '</p><div class="label" style="margin-top:8px">建议切入点</div><p>' + esc(k.engagement) + '</p></div><div class="kol-actions"><div class="kol-links"><a class="kol-source" href="' + k.sourceUrl + '" target="_blank" rel="noopener">公开来源</a><a class="kol-source" href="' + k.pubmedUrl + '" target="_blank" rel="noopener">PubMed / 注册</a></div><span class="note">初筛画像 · 需更新核验</span></div></article>'
+            }
+            function renderKolDomains() {
+                document.getElementById('kolDomainButtons').innerHTML = kolDomains.map(x => '<button class="kol-filter-btn ' + (activeKolDomain === x.id ? 'active' : '') + '" data-kol-domain="' + esc(x.id) + '">' + esc(x.label) + '</button>').join('');
+                document.querySelectorAll('[data-kol-domain]').forEach(b => b.onclick = () => {
+                    activeKolDomain = b.dataset.kolDomain;
+                    renderKolDomains();
+                    renderKols()
+                }
+                )
+            }
+            function renderKols() {
+                const shown = kolProfiles.filter(kolMatches);
+                document.getElementById('kolCards').innerHTML = shown.length ? shown.map(kolCardHTML).join('') : '<div class="kol-empty">没有匹配的 KOL / 团队画像。可以清空搜索或切换分层、地区和领域。</div>';
+                document.getElementById('kolResultCount').textContent = '显示 ' + shown.length + ' / ' + kolProfiles.length + ' 个画像'
+            }
             const advantageRanking = [{
                 rank: 1,
                 title: '非 GABA 机制带来的长期负担差异化',
@@ -3308,10 +4320,12 @@
             ;
             function showPage(page) {
                 const isGuide = page === 'guidelines'
-                  , isPlan = page === 'evidencePlan';
-                document.getElementById('competitorPage').hidden = isGuide || isPlan;
+                  , isPlan = page === 'evidencePlan'
+                  , isKols = page === 'kols';
+                document.getElementById('competitorPage').hidden = isGuide || isPlan || isKols;
                 document.getElementById('guidelinePage').hidden = !isGuide;
                 document.getElementById('evidencePlanPage').hidden = !isPlan;
+                document.getElementById('kolPage').hidden = !isKols;
                 document.querySelectorAll('[data-page]').forEach(btn => btn.classList.toggle('active', btn.dataset.page === page));
                 window.scrollTo({
                     top: 0,
@@ -3338,6 +4352,11 @@
             document.getElementById('assetSearch').addEventListener('input', renderAssets);
             document.getElementById('assetStatusFilter').addEventListener('change', renderAssets);
             document.getElementById('assetPriorityFilter').addEventListener('change', renderAssets);
+            document.getElementById('kolSearch').addEventListener('input', renderKols);
+            document.getElementById('kolRegionFilter').addEventListener('change', renderKols);
+            document.getElementById('kolTierFilter').addEventListener('change', renderKols);
+            document.getElementById('kolDomainFilter').addEventListener('change', renderKols);
+            document.getElementById('kolEntityFilter').addEventListener('change', renderKols);
             renderCategories();
             renderSources();
             renderCards();
@@ -3348,6 +4367,8 @@
             renderAssets();
             renderProductSources();
             renderAdvantageRanking();
+            renderKolDomains();
+            renderKols();
         </script>
     </body>
 </html>
